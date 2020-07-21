@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,16 +14,18 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" media="(min-width:900px)" href="css/monitor.css" />
     <title>Todo List</title>
   </head>
   <body>
-    <div class="container" style="margin-top: 20px;">
-      <div class="card row">
+    <div class="contain">
+      <div class="card">
         <div class="card-header">Todo List</div>
-        <div class="card-body mb-5" style="height: 130px;">
+        <div id="firstcard-bd" class="card-body mt-2" style="height: 130px;">
           <form id="todo-form" name="form">
             <div class="form-row">
-              <div class="form-group col-md-6">
+              <div class="form-group col-sm-6">
                 <input
                   class="form-control"
                   type="text"
@@ -33,16 +35,17 @@
                 />
               </div>
             </div>
-            <button type="submit" class="btn btn-danger">Todo Ekleyin</button>
+            <button id="submit-bt" type="submit" class="btn">
+              Todo Ekleyin
+            </button>
           </form>
           <hr />
         </div>
-
-        <div class="card-body">
+        <div class="card-body mt-5">
           <hr />
           <h5 class="card-title" id="tasks-title">Todolar</h5>
           <div class="form-row">
-            <div class="form-group col-md-6">
+            <div class="form-group col-sm-6">
               <input
                 class="form-control"
                 type="text"
@@ -52,25 +55,14 @@
               />
             </div>
           </div>
-
           <hr />
-          <ul class="list-group">
-            <!-- <li class="list-group-item d-flex justify-content-between">
-                            Todo 1
-                            <a href = "#" class ="delete-item">
-                                <i class = "fa fa-remove"></i>
-                            </a>
-
-                        </li>-->
-          </ul>
+          <ul class="list-group"></ul>
           <hr />
-          <a id="clear-todos" class="btn btn-dark" href="#"
-            >Tüm Taskları Temizleyin</a
-          >
+          <a id="clear-todos" class="btn" href="#">Tüm Taskları Temizleyin</a>
         </div>
       </div>
     </div>
-
+    <img src="images/bird.png" alt="Bird" />
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

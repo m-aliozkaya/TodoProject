@@ -1,0 +1,10 @@
+img {
+  position: fixed;
+  min-height: 100%;
+  display: inline-block;
+  width: 40%;
+}
+
+.contain{
+  width: 60%;
+}

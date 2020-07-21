@@ -1,0 +1,60 @@
+.contain{
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  min-height: 100vh;
+  border: none;
+  margin: 0;
+  background-color: #ffe66d;
+}
+
+.card-header {
+  background-color: #1a535c;
+  border-radius: 0 !important;
+  color: #4ecdc4;
+}
+
+.btn {
+  background-color: #1a535c;
+  color: #4ecdc4;
+}
+
+#tasks-title {
+  color: #1a535c;
+}
+
+.list-group-item {
+  background-color: #4ecdc4;
+  color: #1a535c;
+  border: solid #1a535c 0.15em;
+}
+
+#filter,
+#todo {
+  border: solid #1a535c 0.15em;
+  background-color: #4ecdc4;
+  color: #1a535c;
+}
+
+input[id="todo"]::placeholder {
+  color: #1a535c;
+}
+
+input[id="filter"]::placeholder {
+  color: #1a535c;
+}
+
+hr {
+  border: solid #1a535c 0.1em;
+  opacity: 0.5;
+}
+
+img{
+  padding: 1em;
+  display:none;
+}
+
